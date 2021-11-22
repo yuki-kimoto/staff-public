@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<link rel="icon" type="image/x-icon" href="/images/staff_logo.png">
+<link rel="stylesheet" type="text/css" href="/css/common.css">
+
+<title>デザイン変更しました! - Perlクラブスタッフブログ</title>
+<meta name="description" content="こんにちは、Perlクラブの村上です！">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <!-- header -->
+<div class="main">
+  <h1>
+    <a href="/">Perlクラブスタッフブログ &#x1F4AA;</a>
+    <p id="blog-description">Perlクラブで活動するスタッフの日記</p>
+  </h1>
+</div>
+
+      </div>
+      <div class="main">
+        <div class="content">
+          <div class="entry">
+  <div class="top">
+    <!-- top -->
+
+  </div>
+  <div class="middle">
+    <h2><a href="/blog/20211121.html">デザイン変更しました!</a></h2>
+<p>
+  こんにちは、Perlクラブの村上です！
+</p>
+<p>
+  今回は、<a href="https://metacpan.org/pod/Giblog">Giblog</a>の機能を用いてサイトのデザインの変更を行いました。
+</p>
+<h3>index 自動生成</h3>
+<p>
+  今回は主に、トップページの更新を行いました。
+</p>
+<p>
+  Giblog には、ブログサイトを作成するための機能として、 new_blog というものがあります。
+</p>
+<p>
+  この機能を使うと、ブログサイトのプロトタイプが生成されます。
+</p>
+<pre>
+# ブログサイトのテンプレートを 'my_blog_site' という名前で作成
+% giblog new_blog my_blog_site
+% cd my_blog_site ; ls
+README       giblog.conf  lib/         public/      serve.pl     templates/
+# ウェブサイトの立ち上げ
+% giblog serve
+</pre>
+<p>
+  サイトの見出しになるトップページ (index.html) 更新の度に自動でつくられるようになります。
+</p>
+<p>
+  記事をエントリーに追加する度に、自動で過去７日分のエントリーが一覧表示されるようになります。
+</p>
+<p>
+  (この機能を知らなくて、手動でつくっていました... 笑)
+</p>
+<p>
+  ビルド処理は、"lib/Giblog/Command/build.pm" に定義されており、用途に応じてカスタマイズして使うこともできます。
+</p>
+<p>
+  ブログサイトを簡単につくる上で便利な機能が集まっているかと思います！
+</p>
+<p>
+  みなさんもよければ試してみてください！
+</p>
+
+  </div>
+  <div class="bottom">
+    <!-- bottom -->
+
+  </div>
+</div>
+
+        </div>
+        <div class="side">
+          <!-- side -->
+<div class="side_list">
+  <div class="side_list_title">
+    <a href="/list.html">記事一覧</a>
+  </div>
+  <ul>
+    <li style="list-style:none">
+      11/21 <a href="/blog/20211121.html">デザイン変更しました!</a>
+    </li>
+    <li style="list-style:none">
+      10/24 <a href="/blog/20211024.html">「Perl検定」の紹介！</a>
+    </li>
+    <li style="list-style:none">
+      9/26 <a href="/blog/20210926.html">はじめまして！</a>
+    </li>
+  </ul>
+</div>
+
+        </div>
+      </div>
+      <div class="footer">
+        <!-- footer -->
+<a href="https://github.com/yuki-kimoto/giblog">Giblog</a>
+
+      </div>
+    </div>
+  </body>
+</html>
