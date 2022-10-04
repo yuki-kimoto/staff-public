@@ -29,6 +29,45 @@
     
   </div>
   <div class="middle">
+    <div class="day">2022/10/03</div>
+<h2><a href="/blog/20221003233819.html">正規表現モジュールのテスト</a></h2>
+<p>
+  どうも、Perlクラブの村上です!
+</p>
+<p>
+  すっかり涼しくなりましたね &#x1f330;
+</p>
+<p>
+  今月は <a href="https://metacpan.org/pod/SPVM">SPVM</a> でかかれた正規表現モジュールのテストを行いました!
+</p>
+<p>
+  前回からの続きで、木本さんが手掛けている<a href="https://metacpan.org/pod/SPVM::Regex">正規表現モジュール(SPVM::Regex)</a> の実装をテストしていきました。
+</p>
+<p>
+  正規業限 `\b` のテストを行いました! 単語の先頭、末尾にマッチするやつですね。
+</p>
+<p>
+  個人的にこの手の位置関係に関する正規表現をこれまで使ってこなかったのでよい勉強になりました!  (^, $ あたりはよく使うんですけどね。。。)
+</p>
+<p>
+  SPVM のユニットテストモジュールや、Makefile を使ってのテスト体系があって非常に作業がしやすかったですね!
+</p>
+<p>
+  正規表現は普段よく目にするものしか頭に残っていないのでこれを機にしっかり網羅していきたいです〜！&#x270d; &#x270d; &#x270d;
+</p>
+
+
+  </div>
+  <div class="bottom">
+    
+  </div>
+</div>
+
+<div class="entry">
+  <div class="top">
+    
+  </div>
+  <div class="middle">
     <div class="day">2022/09/04</div>
 <h2><a href="/blog/20220904133819.html">正規表現モジュールのコードリーディング</a></h2>
 <p>
@@ -303,63 +342,6 @@
 </p>
 <p>
   みなさんもよければ3.0の機能について確認してみてください &#x1f4aa;&#x1f4aa;&#x1f4aa;
-</p>
-
-
-  </div>
-  <div class="bottom">
-    
-  </div>
-</div>
-
-<div class="entry">
-  <div class="top">
-    
-  </div>
-  <div class="middle">
-    <div class="day">2021/11/21</div>
-<h2><a href="/blog/20211121.html">デザイン変更しました!</a></h2>
-<p>
-  こんにちは、Perlクラブの村上です！
-</p>
-<p>
-  今回は、<a href="https://metacpan.org/pod/Giblog">Giblog</a>の機能を用いてサイトのデザインの変更を行いました。
-</p>
-<h3>index 自動生成</h3>
-<p>
-  今回は主に、トップページの更新を行いました。
-</p>
-<p>
-  Giblog には、ブログサイトを作成するための機能として、 new_blog というものがあります。
-</p>
-<p>
-  この機能を使うと、ブログサイトのプロトタイプが生成されます。
-</p>
-<pre>
-# ブログサイトのテンプレートを 'my_blog_site' という名前で作成
-% giblog new_blog my_blog_site
-% cd my_blog_site ; ls
-README       giblog.conf  lib/         public/      serve.pl     templates/
-# ウェブサイトの立ち上げ
-% giblog serve
-</pre>
-<p>
-  サイトの見出しになるトップページ (index.html) 更新の度に自動でつくられるようになります。
-</p>
-<p>
-  記事をエントリーに追加する度に、自動で過去７日分のエントリーが一覧表示されるようになります。
-</p>
-<p>
-  (この機能を知らなくて、手動でつくっていました... 笑)
-</p>
-<p>
-  ビルド処理は、"lib/Giblog/Command/build.pm" に定義されており、用途に応じてカスタマイズして使うこともできます。
-</p>
-<p>
-  ブログサイトを簡単につくる上で便利な機能が集まっているかと思います！
-</p>
-<p>
-  みなさんもよければ試してみてください！
 </p>
 
 
