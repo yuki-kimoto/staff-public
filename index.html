@@ -29,6 +29,42 @@
     
   </div>
   <div class="middle">
+    <div class="day">2022/10/28</div>
+<h2><a href="/blog/20221028222819.html">SPVM試験コードの修正 〜コードリーディング編〜</a></h2>
+<p>
+  どうも、Perlクラブの村上です!
+</p>
+<p>
+  すっかり寒くなってきましたね &#x1f4a8;
+</p>
+<p>
+  今月は <a href="https://metacpan.org/pod/SPVM">SPVM</a> のモジュールを試験する前準備として、コードリーディングを行いました!
+</p>
+<p>
+  木本さんがすでにいくつか作成されているモジュールと、試験のコードを拝見させていただきました &#x1f603;
+</p>
+<p>
+  SPVMで書かれた print文、算術演算子など基本モジュールを中心にコードリーディングしていきました！
+</p>
+<p>
+  SPVMの文法と、テストケースの書き方を学ぶ良い機会となりました &#x2728;
+</p>
+<p>
+  これら試験コードを参考に、よいテストを設計していきたいと思います! &#x1f468;
+</p>
+
+
+  </div>
+  <div class="bottom">
+    
+  </div>
+</div>
+
+<div class="entry">
+  <div class="top">
+    
+  </div>
+  <div class="middle">
     <div class="day">2022/10/03</div>
 <h2><a href="/blog/20221003233819.html">正規表現モジュールのテスト</a></h2>
 <p>
@@ -272,76 +308,6 @@
 </p>
 <p>
   よかったら「Perl検定」覗いてみてくださいね〜!
-</p>
-
-
-  </div>
-  <div class="bottom">
-    
-  </div>
-</div>
-
-<div class="entry">
-  <div class="top">
-    
-  </div>
-  <div class="middle">
-    <div class="day">2022/01/26</div>
-<h2><a href="/blog/20220126.html">Giblogにデプロイ機能が追加されました!</a></h2>
-<p>
-  こんにちは、Perlクラブの村上です！
-</p>
-<p>
-  そして明けましておめでとうございます &#x1f389; 今年もPerlクラブをよろしくお願いします &#x1f647;
-</p>
-<p>
-  今回は、<a href="https://metacpan.org/pod/Giblog">Giblog</a>のバージョンアップの報告です！
-</p>
-<p>
-  まもなくGiblogはバージョン3.0 がリリースされます！
-</p>
-<p>
-  デプロイが機能が追加されるとのことで、早速試させていただきました！
-</p>
-<p>
-  現時点ではまだリリースされていませんが、<a href="https://metacpan.org/release/KIMOTO/Giblog-2.01_02">こちらの開発用バージョン(2.01_02)</a>からご確認いただけます！
-</p>
-<p>
-  以下、使い方です！
-</p>
-<h3>
-<p>
-  0. お手元のGiblogのバージョンをアップデートする 
-</p>
-  (3.0がリリース後に、正式に利用可能になります!)
-  <pre> cpanm update Giblog </pre>
-<p>
-  1. deploy.pl というファイルをプロジェクトルートに用意し、デプロイ処理を記述します
-</p>
-<p>
-  2. 以下、手順よりコミット＆プッシュを行う
-</p>
-  <pre>
-  giblog build
-  
-  giblog save -m "コミットメッセージ"
-  
-  giblog publish origin master
-  </pre>
-<p>
-  3. deploy コマンドを実行して、deploy.pl に記述した処理を実行します
-</p>
-  <pre> giblog deploy </pre>
-<p>
-  ※ また上記 2、３の手順を、以下のコマンドで一気に実行することも可能です
-</p>
-  <pre> giblog all -m "コミットメッセージ" origin master </pre>
-</h3>
-<p>
-  デプロイ処理も機能に加わり、より簡単にページを公開できるようになりました〜！！
-</p>
-<p>
-  みなさんもよければ3.0の機能について確認してみてください &#x1f4aa;&#x1f4aa;&#x1f4aa;
 </p>
 
 
